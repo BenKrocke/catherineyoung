@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catherine Young Optometrist</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,24 +20,150 @@
 </head>
 
 <body>
-    <header>
-        <div id="logo">
-            <a href="/">
-                <img src="resource/img/logo_notext.png" />
-                Catherine Young
-            </a>
+    <header class="shadow md:py-0 px-8 md:px-16 lg:px-32 xl:px-64 text-lg">
+        <div class="flex items-center h-20">
+            <div class="flex-grow">
+                <a href="/" class="flex items-center max-w-max">
+                    <img src="resource/img/logo_notext.png" alt="home" class="h-12 mr-0 md:mr-4" />
+                    <span class="hidden md:block">Catherine Young</span>
+                </a>
+            </div>
+
+            <!-- Desktop -->
+            <a class="hidden md:block mr-8 hover:text-cyo-red" href="/practice">About</a>
+            <a class="hidden md:block mr-8 hover:text-cyo-red" href="/services">Services</a>
+            <a class="hidden md:block mr-8 hover:text-cyo-red" href="/products">Products</a>
+            <a class="hidden md:block hover:text-cyo-red" href="/contact">Contact</a>
+
+            <!-- Mobile -->
+            <button id="menu-dropdown" type="button" aria-controls="mobile-menu" aria-expanded="false"
+                class="block md:hidden p-2 hover:bg-red-50 hover:text-cyo-red rounded-md">
+                <span class="sr-only">Open main menu</span>
+                <svg class="block w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
         </div>
-        <a href="/practice">About</a>
-        <a href="/services">Services</a>
-        <a href="/products">Products</a>
-        <a href="/contact">Contact</a>
+
+        <!-- Expanded -->
+        <div id="menu-expanded" class="hidden" aria-orientation="vertical" aria-labelledby="menu-dropdown">
+            <a class="block md:hidden mb-2 hover:text-cyo-red" href="/practice">About</a>
+            <a class="block md:hidden my-2 hover:text-cyo-red" href="/services">Services</a>
+            <a class="block md:hidden my-2 hover:text-cyo-red" href="/products">Products</a>
+            <a class="block md:hidden pb-4 mt-2 hover:text-cyo-red" href="/contact">Contact</a>
+        </div>
     </header>
 
-    <section></section>
-    <section></section>
-    <section></section>
+    <img src="resource/img/glassesbannner_eye.png" alt="banner" class="w-full mr-0 h-96 object-cover" />
+
+    <div class="">
+        <section class="mx-auto text-center my-16 px-8 md:px-16 lg:px-32 xl:px-64">
+            <h1 class="text-xl font-bold mb-2">YOUR LEADING OPTOMETRIST & EYE CARE SPECIALIST</h1>
+            <p>Vision is a personal experience, and everyone sees the world with their own unique perspective. When you
+                visit one of our eight compassionate Eye Concepts locations, we are dedicated to providing the best
+                possible
+                eye care solution to suit your visual expectations and lifestyle requirements. Our practices are
+                family-friendly, and we welcome customers of all ages.
+            </p>
+            <br>
+            <p>
+                Based on the success of our first family practice, Fairfield, we have since expanded to other locations
+                around Sydney and Melbourne, including Burwood, Merrylands, North Sydney, Hurstville, Oran Park,
+                Narellan,
+                Edmondson Park, Wetherill Park and our very first store in Melbourne - Southland. We are proud to be
+                operating in these locations with the same commitment to delivering ultimate customer satisfaction and
+                top
+                quality eye health care. Don’t take our word for it – pay us a visit and see for yourself!</p>
+            <section></section>
+        </section>
+
+        <section class="custom-background my-16 py-16 px-8 md:px-16 lg:px-32 xl:px-64 flex justify-between">
+            <img class="mr-4 rounded-full h-80 w-80" src="resource/img/catherine.png" alt="Catherine Young">
+            <div
+                class="ml-32 bg-white border-[1rem] border-cyo-red-light outline outline-[2rem] p-16 rounded-[50px] outline-white">
+                <h2 class="text-lg text-cyo-red mb-2">CATHERINE YOUNG</h2>
+                <p>
+                    Catherine began practicing optometry in 1989. She moved to Perth after her graduation and worked
+                    there for 5 years before returning to Melbourne with the idea of starting her own practice. Two
+                    years later in 1995, Catherine Young Optometrist was established in Albert Park.</p>
+            </div>
+        </section>
+
+        <section class="mx-auto text-center my-16 px-8 md:px-16 lg:px-32 xl:px-64">
+            <h1 class="text-xl font-bold mb-2">YOUR LEADING OPTOMETRIST & EYE CARE SPECIALIST</h1>
+            <p>Vision is a personal experience, and everyone sees the world with their own unique perspective. When you
+                visit one of our eight compassionate Eye Concepts locations, we are dedicated to providing the best
+                possible
+                eye care solution to suit your visual expectations and lifestyle requirements. Our practices are
+                family-friendly, and we welcome customers of all ages.
+            </p>
+            <br>
+            <p>
+                Based on the success of our first family practice, Fairfield, we have since expanded to other locations
+                around Sydney and Melbourne, including Burwood, Merrylands, North Sydney, Hurstville, Oran Park,
+                Narellan,
+                Edmondson Park, Wetherill Park and our very first store in Melbourne - Southland. We are proud to be
+                operating in these locations with the same commitment to delivering ultimate customer satisfaction and
+                top
+                quality eye health care. Don’t take our word for it – pay us a visit and see for yourself!</p>
+            <section></section>
+        </section>
+        <section class="relative bg-cyo-red-light my-16 py-16 px-8 md:px-16 lg:px-32 xl:px-64">
+            <div class="custom-shape-divider-top-1690353153">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="flex justify-between w-full">
+                <div class="bg-white p-8 rounded-lg w-1/4">
+                    <h2 class="text-lg text-cyo-red mb-2">Contact details</h2>
+                    <p>PH 03 9682 8899
+                        <br>FX 03 9682 8898
+                        <br>162 Bridport Street
+                        <br>Albert Park VIC 3206
+                        <br>Email: contact@catherineyoung.com.au
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg w-1/4">
+                    <h2 class="text-lg text-cyo-red mb-2">Opening hours</h2>
+                    <p>
+                        Monday: 9:00 am – 6:00 pm
+                        <br>Tuesday: 9:00 am – 6:00 pm
+                        <br>Wednesday: .9:00 am – 6:00 pm
+                        <br>Thursday: 9:00 am – 6:00 pm
+                        <br>Friday: 9:00 am – 6:00 pm
+                        <br>Saturday: 9:00 am – 5:00 pm
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg w-1/4">
+                    <h2 class="text-lg text-cyo-red mb-2">Follow us on</h2>
+                    <p>Instagram
+                        <br>Facebook
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <footer></footer>
 </body>
+
+<script>
+    document.getElementById('menu-dropdown').addEventListener('click', () => {
+        var className = document.getElementById('menu-expanded').className;
+        if (className === 'hidden') {
+            document.getElementById('menu-expanded').setAttribute('class', 'block');
+            document.getElementById('menu-dropdown').setAttribute('aria-expanded', 'true');
+        } else {
+            document.getElementById('menu-expanded').setAttribute('class', 'hidden');
+            document.getElementById('menu-dropdown').setAttribute('aria-expanded', 'false');
+        }
+    });
+</script>
 
 </html>
