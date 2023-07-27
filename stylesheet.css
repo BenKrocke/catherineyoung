@@ -4,11 +4,12 @@
 
 body {
     font-family: 'Roboto Slab', serif;
+    font-weight: theme('fontWeight.light');
 }
 
 .custom-background {
     height: 100%;
-    background: linear-gradient(to bottom, white, white 20%, theme('colors.cyo-red-light') 20%, theme('colors.cyo-red-light') 80%, white 80%, white)
+    background: linear-gradient(to bottom, white, white 30%, theme('colors.cyo-red-light') 30%, theme('colors.cyo-red-light') 70%, white 70%, white)
 }
 
 .custom-shape-divider-top-1690353153 {
