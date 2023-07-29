@@ -19,7 +19,7 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="text-slate-800">
     <header class="shadow md:py-0 px-8 md:px-16 lg:px-32 xl:px-64 text-lg font-normal">
         <div class="flex items-center h-20">
             <div class="flex-grow">
@@ -63,7 +63,7 @@
 
     <div class="">
         <section class="mx-auto text-center font-light my-16 px-8 md:px-16 lg:px-32 xl:px-64">
-            <h1 class="font-normal text-xl mb-2">Your leading optometrist & eye care specialist</h1>
+            <h1 class="font-normal text-xl mb-2 text-cyo-red">Your leading optometrist & eye care specialist</h1>
             <p>Vision is a personal experience, and everyone sees the world with their own unique perspective. When you
                 visit one of our eight compassionate Eye Concepts locations, we are dedicated to providing the best
                 possible
@@ -82,10 +82,11 @@
             <section></section>
         </section>
 
-        <section class="custom-background my-16 py-16 px-8 md:px-16 lg:px-32 xl:px-64 flex justify-between">
-            <img class="mr-4 rounded-full h-80 w-80 border-white border-[1rem]" src="resource/img/catherine.png"
-                alt="Catherine Young">
-            <div class="ml-64 bg-white border-0 border-cyo-red-light p-16 rounded-[50px] shadow-md">
+        <section
+            class="custom-background my-16 px-8 md:px-16 lg:px-32 xl:px-64 flex justify-between items-center text-white">
+            <img class="mr-16 rounded-full h-64 w-64 outline outline-white outline-[1rem]"
+                src="resource/img/catherine.png" alt="Catherine Young">
+            <div>
                 <h2 class="text-lg mb-2 font-normal">Catherine Young</h2>
                 <p>
                     Catherine began practicing optometry in 1989. She moved to Perth after her graduation and worked
@@ -96,7 +97,7 @@
 
         <section class="mx-auto text-right my-16 px-8 md:px-16 lg:px-32 xl:px-64 flex">
             <div class="mr-16">
-                <h2 class="text-xl font-normal mb-2">The practice</h2>
+                <h2 class="text-xl font-normal mb-2 text-cyo-red">The practice</h2>
                 <p>Our mission in Albert Park is to provide the local community with quality optometric care. To do
                     this, a
                     high level of professional continuing education is maintained and we have a fully-equipped
@@ -114,36 +115,98 @@
             </div>
             <img class="w-64 rounded-full" src="resource/img/practice.jpeg" alt="The practice">
         </section>
-        <section class="my-16 py-16 px-8 md:px-16 lg:px-32 xl:px-64 ">
-            <div class="text-center mb-8">
-                <h2 class="text-xl font-normal mb-2">What we offer</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="flex justify-between w-full text-white">
-                <div class="bg-cyo-red-light p-8 rounded-lg">
-                    <h2 class="text-lg font-normal mb-2">Eyewear</h2>
-                </div>
-                <div class="bg-cyo-red-light p-8 rounded-lg">
-                    <h2 class="text-lg font-normal mb-2">Contact lenses</h2>
-                </div>
-                <div class="bg-cyo-red-light p-8 rounded-lg">
-                    <h2 class="text-lg font-normal mb-2">Service 1</h2>
-                </div>
-                <div class="bg-cyo-red-light p-8 rounded-lg">
-                    <h2 class="text-lg font-normal mb-2">Service 2</h2>
-                </div>
-                <div class="bg-cyo-red-light p-8 rounded-lg">
-                    <h2 class="text-lg font-normal mb-2">Service 3</h2>
-                </div>
-            </div>
 
+        <div
+            class="my-32 py-4 px-8 md:px-16 lg:px-32 xl:px-64 flex flex-row justify-between bg-slate-200 text-slate-600 stroke-slate-600">
+            <div class="basis-1/4 flex flex-col items-center">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M36 48C36 45.7909 30.6274 44 24 44C17.3726 44 12 45.7909 12 48V52C12 58.6274 17.3726 64 24 64C30.6274 64 36 58.6274 36 52V48Z"
+                        stroke-width="4px" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 47L18.8385 20.5007C19.5223 17.8513 21.9119 16 24.6482 16H28" stroke-width="4px"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M36 47H44" stroke-width="4px" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M44 48C44 45.7909 49.3726 44 56 44C62.6274 44 68 45.7909 68 48V52C68 58.6274 62.6274 64 56 64C49.3726 64 44 58.6274 44 52V48Z"
+                        stroke-width="4px" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M68 47L61.1615 20.5007C60.4777 17.8513 58.0881 16 55.3518 16H52" stroke-width="4px"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div>Eyewear</div>
+            </div>
+            <div class="basis-1/4 flex flex-col items-center">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M36 48C36 45.7909 30.6274 44 24 44C17.3726 44 12 45.7909 12 48V52C12 58.6274 17.3726 64 24 64C30.6274 64 36 58.6274 36 52V48Z"
+                        stroke-width="4px" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 47L18.8385 20.5007C19.5223 17.8513 21.9119 16 24.6482 16H28" stroke-width="4px"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M36 47H44" stroke-width="4px" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M44 48C44 45.7909 49.3726 44 56 44C62.6274 44 68 45.7909 68 48V52C68 58.6274 62.6274 64 56 64C49.3726 64 44 58.6274 44 52V48Z"
+                        stroke-width="4px" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M68 47L61.1615 20.5007C60.4777 17.8513 58.0881 16 55.3518 16H52" stroke-width="4px"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div>Eyewear</div>
+            </div>
+            <div class="basis-1/4 flex flex-col items-center">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M36 48C36 45.7909 30.6274 44 24 44C17.3726 44 12 45.7909 12 48V52C12 58.6274 17.3726 64 24 64C30.6274 64 36 58.6274 36 52V48Z"
+                        stroke-width="4px" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 47L18.8385 20.5007C19.5223 17.8513 21.9119 16 24.6482 16H28" stroke-width="4px"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M36 47H44" stroke-width="4px" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M44 48C44 45.7909 49.3726 44 56 44C62.6274 44 68 45.7909 68 48V52C68 58.6274 62.6274 64 56 64C49.3726 64 44 58.6274 44 52V48Z"
+                        stroke-width="4px" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M68 47L61.1615 20.5007C60.4777 17.8513 58.0881 16 55.3518 16H52" stroke-width="4px"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div>Eyewear</div>
+            </div>
+            <div class="basis-1/4 flex flex-col items-center">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M36 48C36 45.7909 30.6274 44 24 44C17.3726 44 12 45.7909 12 48V52C12 58.6274 17.3726 64 24 64C30.6274 64 36 58.6274 36 52V48Z"
+                        stroke-width="4px" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 47L18.8385 20.5007C19.5223 17.8513 21.9119 16 24.6482 16H28" stroke-width="4px"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M36 47H44" stroke-width="4px" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M44 48C44 45.7909 49.3726 44 56 44C62.6274 44 68 45.7909 68 48V52C68 58.6274 62.6274 64 56 64C49.3726 64 44 58.6274 44 52V48Z"
+                        stroke-width="4px" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M68 47L61.1615 20.5007C60.4777 17.8513 58.0881 16 55.3518 16H52" stroke-width="4px"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div>Eyewear</div>
+            </div>
+        </div>
+
+        <section class="mx-auto text-left my-16 mb-32 px-8 md:px-16 lg:px-32 xl:px-64 flex">
+            <img class="w-64 rounded-full" src="resource/img/contactlenses_square.jpg" alt="The practice">
+            <div class="ml-16">
+                <h2 class="text-xl font-normal mb-2 text-cyo-red">The practice</h2>
+                <p>Our mission in Albert Park is to provide the local community with quality optometric care. To do
+                    this, a
+                    high level of professional continuing education is maintained and we have a fully-equipped
+                    consultation
+                    room for thorough eye examinations. This includes a perimeter (visual field tester), a digital
+                    retinal
+                    camera and an OCT (Optical Coherence Tomographer) scanner for the detection and monitoring of
+                    conditions
+                    including glaucoma, macular degeneration and diabetic retinopathy. The earlier eye diseases are
+                    detected, the easier they are to treat.</p>
+                <br>
+                <p>
+                    Our service extends beyond the sale of glasses and we are always happy to make frame adjustments and
+                    minor repairs to keep your glasses in the best possible working condition.</p>
+            </div>
         </section>
 
-        <section class="my-16 py-16 px-8 md:px-16 lg:px-32 xl:px-64 flex">
+
+        <section class="py-16 px-8 md:px-16 lg:px-32 xl:px-64 flex bg-slate-200 text-slate-800">
             <iframe class="rounded-xl border-0 shadow-lg"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.8345296666907!2d144.95213857615806!3d-37.8407594719689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad667e46f3e1923%3A0xf78af4f13a9992cb!2s162%20Bridport%20St%2C%20Albert%20Park%20VIC%203206!5e0!3m2!1sen!2sau!4v1690427581812!5m2!1sen!2sau"
                 width="450" height="450" allowfullscreen="" loading="lazy"
@@ -158,17 +221,6 @@
                         <br>E: contact@catherineyoung.com.au
                     </p>
                     <br>
-                    <h2 class="text-lg font-normal mb-2">Opening hours</h2>
-                    <p>
-                        Monday: 9:00 am – 6:00 pm
-                        <br>Tuesday: 9:00 am – 6:00 pm
-                        <br>Wednesday: 9:00 am – 6:00 pm
-                        <br>Thursday: 9:00 am – 6:00 pm
-                        <br>Friday: 9:00 am – 6:00 pm
-                        <br>Saturday: 9:00 am – 5:00 pm
-                    </p>
-                </div>
-                <div>
                     <h2 class="text-lg font-normal mb-2">Follow us on</h2>
                     <div class="flex">
                         <a class="block h-8 w-8" href="https://www.facebook.com/CatherineYoungOptometrist">
@@ -179,49 +231,25 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- <section class="relative bg-cyo-red-light my-16 py-16 px-8 md:px-16 lg:px-32 xl:px-64">
-            <div class="custom-shape-divider-top-1690353153">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                        class="shape-fill"></path>
-                </svg>
-            </div>
-            <div class="flex justify-between w-full">
-                <div class="bg-white p-8 rounded-lg w-1/4">
-                    <h2 class="text-lg mb-2">Contact details</h2>
-                    <p>PH 03 9682 8899
-                        <br>FX 03 9682 8898
-                        <br>162 Bridport Street
-                        <br>Albert Park VIC 3206
-                        <br>Email: contact@catherineyoung.com.au
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-lg w-1/4">
-                    <h2 class="text-lg mb-2">Opening hours</h2>
+                <div>
+                    <h2 class="text-lg font-normal mb-2">Opening hours</h2>
                     <p>
                         Monday: 9:00 am – 6:00 pm
                         <br>Tuesday: 9:00 am – 6:00 pm
-                        <br>Wednesday: .9:00 am – 6:00 pm
+                        <br>Wednesday: 9:00 am – 6:00 pm
                         <br>Thursday: 9:00 am – 6:00 pm
                         <br>Friday: 9:00 am – 6:00 pm
                         <br>Saturday: 9:00 am – 5:00 pm
                     </p>
                 </div>
-                <div class="bg-white p-8 rounded-lg w-1/4">
-                    <h2 class="text-lg mb-2">Follow us on</h2>
-                    <p>Instagram
-                        <br>Facebook
-                    </p>
-                </div>
             </div>
-        </section> -->
+        </section>
     </div>
 
-    <footer></footer>
+    <footer class="bg-slate-600 h-32 text-white text-center flex items-center justify-center">© Copyright
+        Catherine
+        Young
+        Optometrist</footer>
 </body>
 
 <script>
