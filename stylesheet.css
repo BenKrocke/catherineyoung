@@ -7,10 +7,23 @@ body {
     font-weight: theme('fontWeight.light');
 }
 
-.custom-background {
-    height: 100%;
-    background: linear-gradient(to bottom, white, white 15%, theme('colors.slate.600') 15%, theme('colors.slate.600') 85%, white 85%, white)
+@layer utilities {
+    .custom-desktop-background {
+        height: 100%;
+        background: linear-gradient(to bottom, white, white 15%, theme('colors.cyo-red-light') 15%, theme('colors.cyo-red-light') 85%, white 85%, white)
+    }
+
+    .custom-desktop-md-background {
+        height: 100%;
+        background: linear-gradient(to bottom, white, white 5%, theme('colors.cyo-red-light') 5%, theme('colors.cyo-red-light') 95%, white 95%, white)
+    }
+
+    .custom-mobile-background {
+        height: 100%;
+        background: linear-gradient(to bottom, white, white 15%, theme('colors.cyo-red-light') 15%, theme('colors.cyo-red-light') 100%, white 100%, white)
+    }
 }
+
 
 .custom-shape-divider-top-1690353153 {
     position: absolute;
