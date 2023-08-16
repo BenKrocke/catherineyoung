@@ -574,6 +574,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
 .mb-32 {
   margin-bottom: 8rem;
 }
@@ -596,6 +600,10 @@ video {
 
 .mr-8 {
   margin-right: 2rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-2 {
@@ -725,20 +733,6 @@ video {
   background-color: rgb(215 88 96 / var(--tw-bg-opacity));
 }
 
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
-}
-
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
-
-.fill-red-200 {
-  fill: #fecaca;
-}
-
 .stroke-slate-600 {
   stroke: #475569;
 }
@@ -764,11 +758,6 @@ video {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .py-8 {
@@ -816,11 +805,6 @@ video {
   font-weight: 400;
 }
 
-.text-cyo-red {
-  --tw-text-opacity: 1;
-  color: rgb(194 34 61 / var(--tw-text-opacity));
-}
-
 .text-slate-600 {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));
@@ -834,6 +818,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-cyo-red {
+  --tw-text-opacity: 1;
+  color: rgb(194 34 61 / var(--tw-text-opacity));
 }
 
 .shadow {
@@ -860,9 +849,21 @@ video {
   outline-color: #fff;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .custom-mobile-background {
   height: 100%;
   background: linear-gradient(to bottom, white, white 15%, #D75860 15%, #D75860 100%, white 100%, white)
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+
+  src: url(../resource/font/RobotoSlab-VariableFont_wght.ttf);
 }
 
 body {

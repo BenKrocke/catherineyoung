@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Catherine Young Optometrist</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="text-slate-800">
+    <header class="shadow md:py-0 px-8 md:px-16 lg:px-32 xl:px-64 text-lg font-normal">
+        <div class="flex items-center h-20">
+            <div class="flex-grow">
+                <a href="/" class="flex items-center max-w-max">
+                    <img src="resource/img/logo_notext.png" alt="home" class="h-12 mr-0 md:mr-4" />
+                    <span class="hidden md:block">
+                        <div class="text-2xl">Optometrist</div>
+                        <div class="text-sm">Catherine Young</div>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Desktop -->
+            <a class="hidden md:block mr-8 hover:text-cyo-red transition-all" href="/practice">The Practice</a>
+            <a class="hidden md:block mr-8 hover:text-cyo-red transition-all" href="/products">Products</a>
+            <a class="hidden md:block hover:text-cyo-red transition-all" href="/contact">Contact</a>
+
+            <!-- Mobile -->
+            <button id="menu-dropdown" type="button" aria-controls="mobile-menu" aria-expanded="false"
+                class="block md:hidden p-2 hover:bg-red-50 hover:text-cyo-red rounded-md transition-all">
+                <span class="sr-only">Open main menu</span>
+                <svg class="block w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Expanded -->
+        <div id="menu-expanded" class="hidden" aria-orientation="vertical" aria-labelledby="menu-dropdown">
+            <a class="block md:hidden mb-2 hover:text-cyo-red transition-all" href="/practice">The Practice</a>
+            <a class="block md:hidden my-2 hover:text-cyo-red transition-all" href="/products">Products</a>
+            <a class="block md:hidden pb-4 mt-2 hover:text-cyo-red transition-all" href="/contact">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section></section>
+    </main>
+
+    <footer class="bg-cyo-red-light h-32 text-white text-center flex items-center justify-center">© Copyright
+        Catherine
+        Young
+        Optometrist</footer>
+</body>
+
+<script>
+    document.getElementById('menu-dropdown').addEventListener('click', () => {
+        var className = document.getElementById('menu-expanded').className;
+        if (className === 'hidden') {
+            document.getElementById('menu-expanded').setAttribute('class', 'block');
+            document.getElementById('menu-dropdown').setAttribute('aria-expanded', 'true');
+        } else {
+            document.getElementById('menu-expanded').setAttribute('class', 'hidden');
+            document.getElementById('menu-dropdown').setAttribute('aria-expanded', 'false');
+        }
+    });
+</script>
+</html>
