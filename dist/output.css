@@ -805,6 +805,11 @@ video {
   font-weight: 400;
 }
 
+.text-cyo-red {
+  --tw-text-opacity: 1;
+  color: rgb(194 34 61 / var(--tw-text-opacity));
+}
+
 .text-slate-600 {
   --tw-text-opacity: 1;
   color: rgb(71 85 105 / var(--tw-text-opacity));
@@ -818,11 +823,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-cyo-red {
-  --tw-text-opacity: 1;
-  color: rgb(194 34 61 / var(--tw-text-opacity));
 }
 
 .shadow {
