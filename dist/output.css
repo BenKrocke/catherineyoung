@@ -618,6 +618,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .block {
   display: block;
 }
@@ -656,6 +660,14 @@ video {
 
 .h-96 {
   height: 24rem;
+}
+
+.max-h-32 {
+  max-height: 8rem;
+}
+
+.max-h-16 {
+  max-height: 4rem;
 }
 
 .w-5 {
@@ -795,8 +807,17 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-left {
