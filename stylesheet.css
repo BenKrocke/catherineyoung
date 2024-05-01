@@ -2,9 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    @font-face {
+        font-family: "Inter";
+        src: url(../resource/font/Inter/Inter-VariableFont_slnt\,wght.ttf);
+    }
+
+    @font-face {
+        font-family: "Domine";
+        src: url(../resource/font/Domine/Domine-VariableFont_wght.ttf);
+    }
+}
+
 body {
-    font-family: 'Roboto';
-    font-weight: theme('fontWeight.light');
+    @apply font-body font-extralight;
 }
 
 @layer utilities {

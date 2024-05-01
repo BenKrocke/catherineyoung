@@ -2,6 +2,10 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
+    fontFamily: {
+      'display': ['Inter'],
+      'body': ['Inter']
+    },
     extend: {
       colors: {
         'cyo-red': '#c2223d',
