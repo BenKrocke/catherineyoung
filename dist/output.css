@@ -710,6 +710,10 @@ video {
   flex-basis: 50%;
 }
 
+.cursor-default {
+  cursor: default;
+}
+
 .list-inside {
   list-style-position: inside;
 }
